@@ -15,6 +15,8 @@
 		17C18C9221459B8B00C830EA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 17C18C9021459B8B00C830EA /* LaunchScreen.storyboard */; };
 		17C18C9D21459EE500C830EA /* CategoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17C18C9C21459EE500C830EA /* CategoryCell.swift */; };
 		17C18CA02145A08300C830EA /* AddCategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17C18C9F2145A08300C830EA /* AddCategoryViewController.swift */; };
+		17C18CA22145AB3D00C830EA /* PlayerManagementViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17C18CA12145AB3D00C830EA /* PlayerManagementViewController.swift */; };
+		17C18CA42145AB7500C830EA /* AddPlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17C18CA32145AB7500C830EA /* AddPlayerViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +30,8 @@
 		17C18C9321459B8B00C830EA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		17C18C9C21459EE500C830EA /* CategoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCell.swift; sourceTree = "<group>"; };
 		17C18C9F2145A08300C830EA /* AddCategoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddCategoryViewController.swift; sourceTree = "<group>"; };
+		17C18CA12145AB3D00C830EA /* PlayerManagementViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerManagementViewController.swift; sourceTree = "<group>"; };
+		17C18CA32145AB7500C830EA /* AddPlayerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPlayerViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +80,8 @@
 				17C18C8421459B8900C830EA /* AppDelegate.swift */,
 				17C18C8621459B8900C830EA /* CategoryViewController.swift */,
 				17C18C9F2145A08300C830EA /* AddCategoryViewController.swift */,
+				17C18CA12145AB3D00C830EA /* PlayerManagementViewController.swift */,
+				17C18CA32145AB7500C830EA /* AddPlayerViewController.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -176,10 +182,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				17C18CA42145AB7500C830EA /* AddPlayerViewController.swift in Sources */,
 				17C18C8721459B8900C830EA /* CategoryViewController.swift in Sources */,
 				17C18CA02145A08300C830EA /* AddCategoryViewController.swift in Sources */,
 				17C18C8521459B8900C830EA /* AppDelegate.swift in Sources */,
 				17C18C8D21459B8900C830EA /* Cricket_Team_App.xcdatamodeld in Sources */,
+				17C18CA22145AB3D00C830EA /* PlayerManagementViewController.swift in Sources */,
 				17C18C9D21459EE500C830EA /* CategoryCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

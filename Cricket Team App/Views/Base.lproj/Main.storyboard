@@ -110,7 +110,6 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Set Your Team Logo" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eYD-py-xED">
                                 <rect key="frame" x="51" y="62" width="273" height="41"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="273" id="EX0-Cz-nKM"/>
                                     <constraint firstAttribute="height" constant="41" id="zTj-ti-V3O"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="30"/>
@@ -120,7 +119,6 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r9w-SD-kqz">
                                 <rect key="frame" x="130" y="305" width="114" height="39"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="114" id="3wE-Op-6w8"/>
                                     <constraint firstAttribute="height" constant="39" id="ZOF-N7-cuG"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
@@ -140,8 +138,7 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mRL-tQ-a9Y">
                                 <rect key="frame" x="107" y="462" width="161" height="43"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="43" id="MBV-nN-OZ1"/>
-                                    <constraint firstAttribute="width" constant="161" id="n5C-Zm-Fd2"/>
+                                    <constraint firstAttribute="height" constant="43" id="mLn-7x-uZo"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="22"/>
                                 <state key="normal" title="SAVE TO TEAM">
@@ -154,16 +151,16 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="I9x-1g-O7l" firstAttribute="top" secondItem="r9w-SD-kqz" secondAttribute="bottom" constant="55" id="1fB-Si-wch"/>
                             <constraint firstItem="eYD-py-xED" firstAttribute="top" secondItem="nmt-3g-cWm" secondAttribute="top" constant="42" id="C2F-hI-Oem"/>
-                            <constraint firstItem="mRL-tQ-a9Y" firstAttribute="centerX" secondItem="I9x-1g-O7l" secondAttribute="centerX" id="H1F-qJ-Ktl"/>
+                            <constraint firstItem="I9x-1g-O7l" firstAttribute="leading" secondItem="nmt-3g-cWm" secondAttribute="leading" constant="16" id="J0M-2Q-1hg"/>
                             <constraint firstItem="uf9-3d-85t" firstAttribute="centerX" secondItem="eYD-py-xED" secondAttribute="centerX" id="QyU-1H-ja5"/>
-                            <constraint firstItem="I9x-1g-O7l" firstAttribute="top" secondItem="r9w-SD-kqz" secondAttribute="bottom" constant="55" id="RMB-6C-K9t"/>
-                            <constraint firstItem="mRL-tQ-a9Y" firstAttribute="top" secondItem="I9x-1g-O7l" secondAttribute="bottom" constant="33" id="a8j-y4-RZi"/>
+                            <constraint firstItem="mRL-tQ-a9Y" firstAttribute="centerX" secondItem="6km-M5-dFU" secondAttribute="centerX" id="Udq-v0-Uy9"/>
                             <constraint firstItem="r9w-SD-kqz" firstAttribute="centerX" secondItem="uf9-3d-85t" secondAttribute="centerX" id="bUE-Dw-CUo"/>
                             <constraint firstItem="uf9-3d-85t" firstAttribute="top" secondItem="eYD-py-xED" secondAttribute="bottom" constant="32" id="cwj-7R-IL0"/>
-                            <constraint firstItem="I9x-1g-O7l" firstAttribute="leading" secondItem="nmt-3g-cWm" secondAttribute="leading" constant="16" id="dBP-lH-v3Q"/>
                             <constraint firstItem="eYD-py-xED" firstAttribute="centerX" secondItem="6km-M5-dFU" secondAttribute="centerX" id="fZb-Vf-CW1"/>
-                            <constraint firstItem="nmt-3g-cWm" firstAttribute="trailing" secondItem="I9x-1g-O7l" secondAttribute="trailing" constant="16" id="nlw-eg-P0i"/>
+                            <constraint firstItem="mRL-tQ-a9Y" firstAttribute="top" secondItem="I9x-1g-O7l" secondAttribute="bottom" constant="33" id="h2d-TQ-PlW"/>
+                            <constraint firstItem="nmt-3g-cWm" firstAttribute="trailing" secondItem="I9x-1g-O7l" secondAttribute="trailing" constant="16" id="hrc-vl-jXK"/>
                             <constraint firstItem="r9w-SD-kqz" firstAttribute="top" secondItem="uf9-3d-85t" secondAttribute="bottom" constant="20" id="ppr-0J-xcl"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="nmt-3g-cWm"/>
@@ -176,6 +173,154 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oNt-WU-P4m" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1728.8" y="133.5832083958021"/>
+        </scene>
+        <!--Player Management View Controller-->
+        <scene sceneID="LUu-bL-OQX">
+            <objects>
+                <viewController storyboardIdentifier="PlayerManagementViewController" id="F7W-fG-qaN" customClass="PlayerManagementViewController" customModule="Cricket_Team_App" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="b4d-up-Xsi">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oxR-rb-aGh">
+                                <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                                <items>
+                                    <navigationItem title="PLAYER MANAGEMENT" id="py1-Or-MEC">
+                                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="eSA-sY-KgJ"/>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="FGa-aN-flD">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="ros-MW-zio" firstAttribute="trailing" secondItem="FGa-aN-flD" secondAttribute="trailing" id="3St-Le-wEc"/>
+                            <constraint firstItem="oxR-rb-aGh" firstAttribute="leading" secondItem="ros-MW-zio" secondAttribute="leading" id="D6H-Wg-cBg"/>
+                            <constraint firstItem="oxR-rb-aGh" firstAttribute="trailing" secondItem="ros-MW-zio" secondAttribute="trailing" id="IOF-Kl-KPA"/>
+                            <constraint firstItem="FGa-aN-flD" firstAttribute="leading" secondItem="ros-MW-zio" secondAttribute="leading" id="TBr-Uv-aNP"/>
+                            <constraint firstItem="ros-MW-zio" firstAttribute="bottom" secondItem="FGa-aN-flD" secondAttribute="bottom" id="XEe-HY-W2C"/>
+                            <constraint firstItem="oxR-rb-aGh" firstAttribute="top" secondItem="ros-MW-zio" secondAttribute="top" id="tul-Ub-aFg"/>
+                            <constraint firstItem="FGa-aN-flD" firstAttribute="top" secondItem="oxR-rb-aGh" secondAttribute="bottom" id="z4J-9N-rlJ"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="ros-MW-zio"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="I7r-C5-de2" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2399" y="134"/>
+        </scene>
+        <!--Add Player View Controller-->
+        <scene sceneID="nLu-Zs-1eK">
+            <objects>
+                <viewController storyboardIdentifier="AddPlayerViewController" id="br1-eT-hhU" customClass="AddPlayerViewController" customModule="Cricket_Team_App" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="raV-K3-9YQ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ADD PLAYER TO TEAM" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FQV-3S-mQH">
+                                <rect key="frame" x="51" y="28" width="273" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="g6d-Q5-7r4"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="1AX-vU-yTL">
+                                <rect key="frame" x="112" y="66" width="150" height="150"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="150" id="Cxr-aM-zq3"/>
+                                    <constraint firstAttribute="width" constant="150" id="JxR-xg-56W"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BYy-23-hSi">
+                                <rect key="frame" x="91.5" y="224" width="192" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="2oL-3f-svN"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="20"/>
+                                <state key="normal" title="ADD PLAYER IMAGE">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Player Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="nS7-7v-Uc2">
+                                <rect key="frame" x="16" y="301" width="343" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Player City" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="HDB-EP-Jgx">
+                                <rect key="frame" x="16" y="339" width="343" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Player Birthdate" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="RsW-uZ-suD">
+                                <rect key="frame" x="16" y="377" width="343" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="uQj-ed-sdT">
+                                <rect key="frame" x="16" y="461" width="343" height="128"/>
+                                <color key="backgroundColor" red="0.62554138940000004" green="0.6529048207" blue="0.73166510019999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="np4-H1-crZ"/>
+                                    <constraint firstAttribute="width" constant="343" id="zQU-sd-J0L"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Player Information" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EHI-2D-RHn">
+                                <rect key="frame" x="103" y="425" width="169" height="28"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NlY-Hl-w7Q">
+                                <rect key="frame" x="77" y="607" width="221" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="dIz-aP-Lub"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="20"/>
+                                <state key="normal" title="ADD PLAYER TO TEAM">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="BYy-23-hSi" firstAttribute="top" secondItem="1AX-vU-yTL" secondAttribute="bottom" constant="8" id="34L-k7-PzK"/>
+                            <constraint firstItem="NlY-Hl-w7Q" firstAttribute="centerX" secondItem="raV-K3-9YQ" secondAttribute="centerX" id="3YF-cO-UvD"/>
+                            <constraint firstItem="uQj-ed-sdT" firstAttribute="top" secondItem="EHI-2D-RHn" secondAttribute="bottom" constant="8" id="4kO-1e-25D"/>
+                            <constraint firstItem="1AX-vU-yTL" firstAttribute="centerX" secondItem="raV-K3-9YQ" secondAttribute="centerX" id="6BX-a0-KFg"/>
+                            <constraint firstItem="FQV-3S-mQH" firstAttribute="centerX" secondItem="raV-K3-9YQ" secondAttribute="centerX" id="BEA-Eg-5gS"/>
+                            <constraint firstItem="RsW-uZ-suD" firstAttribute="trailing" secondItem="nS7-7v-Uc2" secondAttribute="trailing" id="H41-cF-SB3"/>
+                            <constraint firstItem="HDB-EP-Jgx" firstAttribute="trailing" secondItem="nS7-7v-Uc2" secondAttribute="trailing" id="Iah-FM-Oaj"/>
+                            <constraint firstItem="HDB-EP-Jgx" firstAttribute="leading" secondItem="nS7-7v-Uc2" secondAttribute="leading" id="Jwk-vG-gnf"/>
+                            <constraint firstItem="uQj-ed-sdT" firstAttribute="centerX" secondItem="raV-K3-9YQ" secondAttribute="centerX" id="Khl-SA-v1S"/>
+                            <constraint firstItem="1AX-vU-yTL" firstAttribute="top" secondItem="FQV-3S-mQH" secondAttribute="bottom" constant="8" id="Z4X-aT-jzY"/>
+                            <constraint firstItem="EHI-2D-RHn" firstAttribute="centerX" secondItem="raV-K3-9YQ" secondAttribute="centerX" id="ca6-AH-vNP"/>
+                            <constraint firstItem="nS7-7v-Uc2" firstAttribute="leading" secondItem="Jqn-Qt-Wji" secondAttribute="leading" constant="16" id="dDY-Ke-DEp"/>
+                            <constraint firstItem="RsW-uZ-suD" firstAttribute="top" secondItem="HDB-EP-Jgx" secondAttribute="bottom" constant="8" id="dY7-o3-kE3"/>
+                            <constraint firstItem="Jqn-Qt-Wji" firstAttribute="trailing" secondItem="nS7-7v-Uc2" secondAttribute="trailing" constant="16" id="e52-Vj-T6R"/>
+                            <constraint firstItem="RsW-uZ-suD" firstAttribute="leading" secondItem="nS7-7v-Uc2" secondAttribute="leading" id="jrV-6D-Sz3"/>
+                            <constraint firstItem="FQV-3S-mQH" firstAttribute="top" secondItem="Jqn-Qt-Wji" secondAttribute="top" constant="8" id="kQ4-NE-sLq"/>
+                            <constraint firstItem="BYy-23-hSi" firstAttribute="centerX" secondItem="raV-K3-9YQ" secondAttribute="centerX" id="qg7-nq-eXV"/>
+                            <constraint firstItem="nS7-7v-Uc2" firstAttribute="top" secondItem="BYy-23-hSi" secondAttribute="bottom" constant="37" id="srs-xJ-kL2"/>
+                            <constraint firstItem="HDB-EP-Jgx" firstAttribute="top" secondItem="nS7-7v-Uc2" secondAttribute="bottom" constant="8" id="wuG-gf-IHt"/>
+                            <constraint firstItem="NlY-Hl-w7Q" firstAttribute="top" secondItem="uQj-ed-sdT" secondAttribute="bottom" constant="18" id="xit-k3-212"/>
+                            <constraint firstItem="EHI-2D-RHn" firstAttribute="top" secondItem="RsW-uZ-suD" secondAttribute="bottom" constant="18" id="zVQ-Iv-ewH"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Jqn-Qt-Wji"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4g5-gz-bvH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3077.5999999999999" y="133.5832083958021"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="jK9-Mw-Jcf">
