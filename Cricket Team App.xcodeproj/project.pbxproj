@@ -8,22 +8,26 @@
 
 /* Begin PBXBuildFile section */
 		17C18C8521459B8900C830EA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17C18C8421459B8900C830EA /* AppDelegate.swift */; };
-		17C18C8721459B8900C830EA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17C18C8621459B8900C830EA /* ViewController.swift */; };
+		17C18C8721459B8900C830EA /* CategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17C18C8621459B8900C830EA /* CategoryViewController.swift */; };
 		17C18C8A21459B8900C830EA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 17C18C8821459B8900C830EA /* Main.storyboard */; };
 		17C18C8D21459B8900C830EA /* Cricket_Team_App.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 17C18C8B21459B8900C830EA /* Cricket_Team_App.xcdatamodeld */; };
 		17C18C8F21459B8B00C830EA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 17C18C8E21459B8B00C830EA /* Assets.xcassets */; };
 		17C18C9221459B8B00C830EA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 17C18C9021459B8B00C830EA /* LaunchScreen.storyboard */; };
+		17C18C9D21459EE500C830EA /* CategoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17C18C9C21459EE500C830EA /* CategoryCell.swift */; };
+		17C18CA02145A08300C830EA /* AddCategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17C18C9F2145A08300C830EA /* AddCategoryViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		17C18C8121459B8900C830EA /* Cricket Team App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Cricket Team App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		17C18C8421459B8900C830EA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		17C18C8621459B8900C830EA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		17C18C8621459B8900C830EA /* CategoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryViewController.swift; sourceTree = "<group>"; };
 		17C18C8921459B8900C830EA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		17C18C8C21459B8900C830EA /* Cricket_Team_App.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Cricket_Team_App.xcdatamodel; sourceTree = "<group>"; };
 		17C18C8E21459B8B00C830EA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		17C18C9121459B8B00C830EA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		17C18C9321459B8B00C830EA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		17C18C9C21459EE500C830EA /* CategoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCell.swift; sourceTree = "<group>"; };
+		17C18C9F2145A08300C830EA /* AddCategoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddCategoryViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +60,49 @@
 		17C18C8321459B8900C830EA /* Cricket Team App */ = {
 			isa = PBXGroup;
 			children = (
-				17C18C8421459B8900C830EA /* AppDelegate.swift */,
-				17C18C8621459B8900C830EA /* ViewController.swift */,
-				17C18C8821459B8900C830EA /* Main.storyboard */,
-				17C18C8E21459B8B00C830EA /* Assets.xcassets */,
-				17C18C9021459B8B00C830EA /* LaunchScreen.storyboard */,
+				17C18C9921459EAB00C830EA /* View Controllers */,
+				17C18C9A21459EB500C830EA /* Views */,
+				17C18C9B21459EC100C830EA /* Supporting Files */,
 				17C18C9321459B8B00C830EA /* Info.plist */,
 				17C18C8B21459B8900C830EA /* Cricket_Team_App.xcdatamodeld */,
+				17C18C9E21459EF000C830EA /* Custom Cells */,
 			);
 			path = "Cricket Team App";
+			sourceTree = "<group>";
+		};
+		17C18C9921459EAB00C830EA /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				17C18C8421459B8900C830EA /* AppDelegate.swift */,
+				17C18C8621459B8900C830EA /* CategoryViewController.swift */,
+				17C18C9F2145A08300C830EA /* AddCategoryViewController.swift */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		17C18C9A21459EB500C830EA /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				17C18C8821459B8900C830EA /* Main.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		17C18C9B21459EC100C830EA /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				17C18C8E21459B8B00C830EA /* Assets.xcassets */,
+				17C18C9021459B8B00C830EA /* LaunchScreen.storyboard */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		17C18C9E21459EF000C830EA /* Custom Cells */ = {
+			isa = PBXGroup;
+			children = (
+				17C18C9C21459EE500C830EA /* CategoryCell.swift */,
+			);
+			path = "Custom Cells";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,9 +176,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				17C18C8721459B8900C830EA /* ViewController.swift in Sources */,
+				17C18C8721459B8900C830EA /* CategoryViewController.swift in Sources */,
+				17C18CA02145A08300C830EA /* AddCategoryViewController.swift in Sources */,
 				17C18C8521459B8900C830EA /* AppDelegate.swift in Sources */,
 				17C18C8D21459B8900C830EA /* Cricket_Team_App.xcdatamodeld in Sources */,
+				17C18C9D21459EE500C830EA /* CategoryCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="IcY-3f-0Ie">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--TEAM CONTROLLER-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="CategoryViewController" id="BYZ-38-t0r" customClass="CategoryViewController" customModule="Cricket_Team_App" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="fTb-fy-WI3">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="CategoryCell" rowHeight="93" id="fqu-tc-369" customClass="CategoryCell" customModule="Cricket_Team_App" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="93"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="fqu-tc-369" id="zc7-AD-pte">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="92.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Cbx-lU-FfB">
+                                                    <rect key="frame" x="15" y="12" width="70" height="70"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="70" id="bhk-Gd-hAh"/>
+                                                        <constraint firstAttribute="width" constant="70" id="wXb-0x-liC"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Team Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ncu-Rk-4sX">
+                                                    <rect key="frame" x="93" y="26.5" width="267" height="40"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="40" id="4Cf-84-tXv"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="Cbx-lU-FfB" firstAttribute="top" secondItem="zc7-AD-pte" secondAttribute="top" constant="12" id="0CB-Jy-98P"/>
+                                                <constraint firstItem="Cbx-lU-FfB" firstAttribute="leading" secondItem="zc7-AD-pte" secondAttribute="leading" constant="15" id="JJs-j3-YJa"/>
+                                                <constraint firstAttribute="trailing" secondItem="Ncu-Rk-4sX" secondAttribute="trailing" constant="15" id="ezz-sc-xYe"/>
+                                                <constraint firstItem="Ncu-Rk-4sX" firstAttribute="top" secondItem="zc7-AD-pte" secondAttribute="top" constant="26.5" id="fNp-8e-hgk"/>
+                                                <constraint firstItem="Ncu-Rk-4sX" firstAttribute="centerY" secondItem="Cbx-lU-FfB" secondAttribute="centerY" id="qzA-Vp-Hgf"/>
+                                                <constraint firstAttribute="bottom" secondItem="Ncu-Rk-4sX" secondAttribute="bottom" constant="26" id="uQ1-IU-KxD"/>
+                                                <constraint firstItem="Ncu-Rk-4sX" firstAttribute="leading" secondItem="Cbx-lU-FfB" secondAttribute="trailing" constant="8" id="ygw-Gq-PZa"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="categoryTeamLogo" destination="Cbx-lU-FfB" id="FhQ-EI-cEW"/>
+                                            <outlet property="categoryTeamNameLbl" destination="Ncu-Rk-4sX" id="wrq-NG-1Wi"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="43e-Rx-K7L"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="1r2-sK-Hue"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="fTb-fy-WI3" secondAttribute="trailing" id="Je1-im-ehB"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="fTb-fy-WI3" secondAttribute="bottom" id="O8K-FO-D3q"/>
+                            <constraint firstItem="fTb-fy-WI3" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="hsm-PB-PjR"/>
+                            <constraint firstItem="fTb-fy-WI3" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="huy-CL-4do"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="TEAM CONTROLLER" id="ne6-fM-ZAh">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="aTl-LR-TCU">
+                            <connections>
+                                <action selector="addCategoryBtnTapped:" destination="BYZ-38-t0r" id="ItB-EA-L4p"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="tableView" destination="fTb-fy-WI3" id="0ac-yT-fW6"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1076" y="133.5832083958021"/>
+        </scene>
+        <!--Add Category View Controller-->
+        <scene sceneID="qbz-zJ-u3Z">
+            <objects>
+                <viewController storyboardIdentifier="AddCategoryViewController" id="j4V-Cr-ReQ" customClass="AddCategoryViewController" customModule="Cricket_Team_App" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="6km-M5-dFU">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="uf9-3d-85t">
+                                <rect key="frame" x="112" y="135" width="150" height="150"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="150" id="RIL-ms-lTK"/>
+                                    <constraint firstAttribute="width" constant="150" id="lmY-MH-Sww"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Set Your Team Logo" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eYD-py-xED">
+                                <rect key="frame" x="51" y="62" width="273" height="41"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="273" id="EX0-Cz-nKM"/>
+                                    <constraint firstAttribute="height" constant="41" id="zTj-ti-V3O"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r9w-SD-kqz">
+                                <rect key="frame" x="130" y="305" width="114" height="39"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="114" id="3wE-Op-6w8"/>
+                                    <constraint firstAttribute="height" constant="39" id="ZOF-N7-cuG"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                                <state key="normal" title="ADD LOGO">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="addLogoBtnTapped:" destination="j4V-Cr-ReQ" eventType="touchUpInside" id="LLH-RS-AjD"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="TEAM NAME" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="I9x-1g-O7l">
+                                <rect key="frame" x="16" y="399" width="343" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mRL-tQ-a9Y">
+                                <rect key="frame" x="107" y="462" width="161" height="43"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="43" id="MBV-nN-OZ1"/>
+                                    <constraint firstAttribute="width" constant="161" id="n5C-Zm-Fd2"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="22"/>
+                                <state key="normal" title="SAVE TO TEAM">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="saveTeamBtnTapped:" destination="j4V-Cr-ReQ" eventType="touchUpInside" id="E4h-0i-kLq"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="eYD-py-xED" firstAttribute="top" secondItem="nmt-3g-cWm" secondAttribute="top" constant="42" id="C2F-hI-Oem"/>
+                            <constraint firstItem="mRL-tQ-a9Y" firstAttribute="centerX" secondItem="I9x-1g-O7l" secondAttribute="centerX" id="H1F-qJ-Ktl"/>
+                            <constraint firstItem="uf9-3d-85t" firstAttribute="centerX" secondItem="eYD-py-xED" secondAttribute="centerX" id="QyU-1H-ja5"/>
+                            <constraint firstItem="I9x-1g-O7l" firstAttribute="top" secondItem="r9w-SD-kqz" secondAttribute="bottom" constant="55" id="RMB-6C-K9t"/>
+                            <constraint firstItem="mRL-tQ-a9Y" firstAttribute="top" secondItem="I9x-1g-O7l" secondAttribute="bottom" constant="33" id="a8j-y4-RZi"/>
+                            <constraint firstItem="r9w-SD-kqz" firstAttribute="centerX" secondItem="uf9-3d-85t" secondAttribute="centerX" id="bUE-Dw-CUo"/>
+                            <constraint firstItem="uf9-3d-85t" firstAttribute="top" secondItem="eYD-py-xED" secondAttribute="bottom" constant="32" id="cwj-7R-IL0"/>
+                            <constraint firstItem="I9x-1g-O7l" firstAttribute="leading" secondItem="nmt-3g-cWm" secondAttribute="leading" constant="16" id="dBP-lH-v3Q"/>
+                            <constraint firstItem="eYD-py-xED" firstAttribute="centerX" secondItem="6km-M5-dFU" secondAttribute="centerX" id="fZb-Vf-CW1"/>
+                            <constraint firstItem="nmt-3g-cWm" firstAttribute="trailing" secondItem="I9x-1g-O7l" secondAttribute="trailing" constant="16" id="nlw-eg-P0i"/>
+                            <constraint firstItem="r9w-SD-kqz" firstAttribute="top" secondItem="uf9-3d-85t" secondAttribute="bottom" constant="20" id="ppr-0J-xcl"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="nmt-3g-cWm"/>
+                    </view>
+                    <connections>
+                        <outlet property="teamLogoImg" destination="uf9-3d-85t" id="ODC-2A-Hx4"/>
+                        <outlet property="teamNameTxt" destination="I9x-1g-O7l" id="nrJ-ud-3yh"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oNt-WU-P4m" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1728.8" y="133.5832083958021"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="jK9-Mw-Jcf">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="IcY-3f-0Ie" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="SsY-IS-Qnt">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="02U-aO-Edt"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lQt-dz-wO2" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="354" y="134"/>
+        </scene>
+    </scenes>
+</document>
